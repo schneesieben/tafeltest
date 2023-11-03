@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Tafelschrift';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tafelschrift'),
+    url(../fonts/tafelschrift/Tafelschrift.ttf) format('truetype'),
+
+}
+
+@font-face {
+  font-family: 'CoalhandLuke';
+  font-style: normal;
+  font-weight: 400;
+  src: local('CoalhandLuke'),
+    url(../fonts/CoalhandLukeTRIAL/CoalhandLukeTRIAL.ttf) format('truetype'),
+
+}
+
+@font-face {
+  font-family: 'Eraser';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Eraser'),
+    url(../fonts/eraser/EraserDust.ttf) format('truetype'),
+
+}
+
+@font-face {
+  font-family: 'Squeaky';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Squeaky'),
+    url(../fonts/squeaky/SqueakyChalkSound.ttf) format('truetype'),
+
+}
+
+@font-face {
+  font-family: 'KG-BROKEN';
+  font-style: normal;
+  font-weight: 400;
+  src: local('KG-BROKEN'),
+    url(../fonts/kimberly-geswein_kg-broken-vessels-sketch/KGBrokenVesselsSketch.ttf) format('truetype'),
+
+}
+
+.main {
+  background-image: url(../img/schwarzer-tafelhintergrund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* gradient wenn keine linzenz für bild */
+  /* background: rgb(32, 32, 32); */
+  /* background: linear-gradient(148deg, rgba(32, 32, 32, 1) 0%, rgba(116, 116, 116, 1) 30%, rgba(97, 99, 100, 1) 54%, rgba(6, 21, 24, 1) 100%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.tafel {
+  color: lightgray;
+  /* font-family: "Tafelschrift"; */
+  /* font-family: "Eraser"; */
+  /* font-family: "Squeaky"; */
+  font-family: "KG-BROKEN";
+  /* font-family: "CoalhandLuke"; */
+  font-size: 5vw;
+  margin: 2vw;
+  padding: 6vw;
+}
+
+.description {
+  color: black;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+}
+
+.description a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description p {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+}
