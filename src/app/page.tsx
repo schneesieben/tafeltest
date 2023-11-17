@@ -15,6 +15,7 @@ export default function Home() {
           <li>Punkt 2</li>
           <li>Punkt 3</li>
           einen Tetxt
+          änderung zum probieren
         </ul>
       </div>
       <div className={styles.description}>
